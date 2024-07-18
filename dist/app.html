@@ -2,13 +2,21 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    
+
     <title>app</title>
 </head>
 
 <body>
     <!-- <script src="https://unpkg.com/glottologist"></script> -->
     
-    <h1 glot-model="hello">hello</h1>
+
+    <h1 id="title"></h1>
+
+    <form>
+        <button type="button" id="ENbutton" onclick="selectEN()">en</button>
+        <button type="button" id="JAbutton" onclick="selectJA()">ja</button>
+    </form>
 
     <script src="app.js"></script>
 </body>
