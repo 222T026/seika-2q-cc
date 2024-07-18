@@ -2,20 +2,37 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    
-
     <title>app</title>
+
+    <style>
+        #text{
+            text-align: center;
+        }
+
+        .buttons{
+            text-align: center;
+        }
+        
+        #ENbutton,
+        #JAbutton{
+            background-color: gainsboro;
+            border: 0;
+            padding: 30px ;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- <script src="https://unpkg.com/glottologist"></script> -->
-    
+    <h1>title</h1>
 
-    <h1 id="title"></h1>
-
+    <p id="text">choose your language</p>
     <form>
-        <button type="button" id="ENbutton" onclick="selectEN()">en</button>
-        <button type="button" id="JAbutton" onclick="selectJA()">ja</button>
+        <div class="buttons">
+            <button type="button" id="ENbutton" onclick="selectEN()">EN</button>
+            <button type="button" id="JAbutton" onclick="selectJA()">JA</button>
+        </div>
     </form>
 
     <script src="app.js"></script>

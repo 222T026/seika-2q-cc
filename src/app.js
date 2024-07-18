@@ -7,8 +7,8 @@ i18next.init({
     resources: {
         en: {
             translation:{
-                "en": "hello world",
-                "ja": "こんにちは、世界"
+                "en": "choose your language",
+                "ja": "言語を選択"
             }
         }
     }
@@ -17,10 +17,10 @@ i18next.init({
 
 let ENbutton = document.getElementById("ENbutton")
 ENbutton.onclick = function(){
-    document.getElementById('title').innerHTML = i18next.t('en');
+    document.getElementById('text').innerHTML = i18next.t('en');
 };
 
 let JAbutton= document.getElementById("JAbutton")
 JAbutton.onclick = function(){
-    document.getElementById('title').innerHTML = i18next.t('ja');
+    document.getElementById('text').innerHTML = i18next.t('ja');
 }

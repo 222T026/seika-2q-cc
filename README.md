@@ -10,10 +10,11 @@ i18next https://www.i18next.com/
   console.log('Hello world');
 })();
 ``` -->
+---
 
-開発の仕方
+### 開発の仕方
 
-以下のコマンドを実行してください。
+インストール
 ```
 npm install
 ```
