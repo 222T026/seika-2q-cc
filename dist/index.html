@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      body{
+        border: solid 1px cyan;
+      }
+
+      /*  swiper*/
+      .swiper {
+        width: 600px;
+        height: 300px;
+      }
+
+      /* justvalidate */
+      .field{
+        display: flex;
+      }
+    </style>
+</head>
+
+<body>
+
+<!-- ------------------------------------------------- -->
+
+  <!-- Slider main container -->
+  <div class="swiper swiper-1">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 0</div>
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+
+    
+  </div>
+  <div id="swiper-title"></div>
+
+<!-- 2つ目のswiper -->
+  <!-- Slider main container -->
+  <div class="swiper swiper-2">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="pose_pien_uruuru_man.png" wigth="600px" height="300px" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="food_sweets_kaonyao_mamuan.png" wigth="600px" height="300px" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="sweets_gomadango.png" wigth="600px" height="300px" alt="">
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  
+  <div id="swiper-title2"></div>
+  
+
+<!-- ---------------------------------------------------- -->
+  <P>frappe</P>
+
+  <form id="basic_form">
+
+    <div class="field">
+      <div>名前</div>
+      <div>
+        <input id="basic_name" type="text" name="name" placeholder="Enter your name" />
+      </div>
+    </div>
+      
+    <div class="field">
+      <div>email</div>
+      <div>
+        <input id="basic_email" type="text" name="email" placeholder="Enter your email" />
+      </div>
+    </div>
+      
+      <div class="field">
+        <div>password</div>
+        <div>
+          <input id="basic_password" type="text" name="password" placeholder="Enter your password" />
+        </div>
+      </div>
+      
+      <div class="field">
+        <div>age</div>
+        <div>
+          <input id="basic_age" type="text" name="age" placeholder="Enter your age" />
+        </div>
+      </div>
+      
+      <div class="field">
+        <div>address</div>
+        <div>
+          <input id="basic_address" type="text" name="address" placeholder="Enter your address" />
+        </div>
+      </div>
+      
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+
+    </form>
+    
+    <script src="main.js"></script>
+</body>
+</html>
