@@ -23,3 +23,8 @@ npm install
 ```
 npm run dev
 ```
+
+webサイトの開き方
+```
+~/app.html
+```

@@ -5,36 +5,117 @@
     <title>app</title>
 
     <style>
-        #text{
-            text-align: center;
-        }
-
-        .buttons{
+        #title,
+        #text,
+        .buttons,
+        h2{
             text-align: center;
         }
         
         #ENbutton,
-        #JAbutton{
+        #jabutton,
+        #ZHbutton{
             background-color: gainsboro;
             border: 0;
             padding: 30px ;
             margin: 10px;
             border-radius: 10px;
         }
+
+        #userInformation{
+            background-color: gainsboro;
+            text-align: center;
+            padding: 20px;
+            margin: 30px 10% ;
+        }
+        li{
+            list-style: none;
+            margin: 10px;
+        }
+        .input{
+            margin-left: 10px;
+        }
+
+        #matome{
+            display:flex;
+        }
+
+        p{
+            margin: 10px 0;
+        }
+
+        #result{
+            padding: 10px;
+            margin: 30px 25%;
+            border: 4px solid gainsboro;
+        }
     </style>
 </head>
 
 <body>
-    <h1>title</h1>
+    <h1 id="title">自己紹介メーカー</h1>
 
-    <p id="text">choose your language</p>
+    <p id="text">翻訳したい言語を選択</p>
     <form>
         <div class="buttons">
             <button type="button" id="ENbutton" onclick="selectEN()">EN</button>
-            <button type="button" id="JAbutton" onclick="selectJA()">JA</button>
+            <button type="button" id="jabutton" onclick="selectJA()">JA</button>
+            <button type="button" id="ZHbutton" onclick="selectZH()">ZH</button>
         </div>
     </form>
 
+    <form id="userInformation">
+        <li>名前 
+            <input type="text" id="inputName" class="input">
+        </li>
+        <li>職業や普段していること
+            <input type="text" id="inputJob" class="input">
+        </li>
+        <li>出身地
+            <input type="text" id="inputPlace">
+        </li>
+        <li>好きなことやもの
+            <input type="text" id="inputFavorite">
+        </li>
+        <li>得意なこと
+            <input type="text" id="inputGood">
+        </li>
+        <li>誕生日
+            <input type="text" id="inputBirthday">
+        </li>
+        <button type="button" id="submitText" onclick="submit()">送信</button>
+    </form>
+
+    <div id="result"> 
+        <h2>結果</h2>
+        <p id="hello">Hello</p>
+        <div id="matome">
+            <p id="name">My name is</p>
+            <p id="nameText"> [your name] </p>
+        </div>
+        <div id="matome">
+            <p id="job">I am a </p>
+            <p id="jobText">[your job or what you do for a living]</p>
+        </div>
+        <div id="matome">
+            <p id="place">I am from </p>
+            <p id="placeText">[your native place]</p>
+        </div>
+        <div id="matome">
+                <p id="favorite">I like </p>
+                <p id="favoriteText">[your favorite things]</p>
+        </div>
+        <div id="matome">
+            <p id="good">I am good at </p>
+            <p id="goodText"> [what you are good at]</p>
+        </div>
+        <div id="matome">
+            <p id="birthday">My birthday is</p>
+            <p id="birthdayText"> [your birthday]</p>
+        </div>
+        <p id="close">Nice to meet you!</p> 
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
